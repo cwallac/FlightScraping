@@ -8,9 +8,10 @@ for j in "${array[@]}"
 do	
 if [ "$i" != "$j" ]
 then
-casperjs expediaScraper.js --arrival=$j --departure=$i --initial=5 --duration=25
+casperjs expediaScraper.js --arrival=$j --departure=$i --initial=5 --duration=10
 echo $j $i
 wait
 fi
 done
 done
+date >> timeLog.log

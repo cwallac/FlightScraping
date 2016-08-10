@@ -95,7 +95,7 @@ function createFlightScrape(departure_city, arrival_city, date, filename) {
 				//PRICE, AIRLINE, DURATION, DEPARTURE_TIME
 				var variableString = price + "," + airline + "," + duration + "," + departure + "\n";
 				//casper.echo(baseString + variableString);
-				fs.write("testing" + filename + ".csv", baseString + variableString,"w+");
+				fs.write("/home/ec2-user/FlightScrape/testing" + filename + ".csv", baseString + variableString,"w+");
 			}
 			casper.echo("One collected");
 			//this.wait(500);

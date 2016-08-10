@@ -28,7 +28,7 @@ casper.start(function() {
 });
 
 casper.then(function() {
-fs.write("testing" + today.fileName() + ".csv", "DEPARTURE_CITY, ARRIVAL_CITY, DATE, DAYS_UNTIL_FLIGHT, PRICE, AIRLINE, DURATION, DEPARTURE_TIME \n", 'w');
+fs.write("/home/ec2-user/FlightScrape/testing" + today.fileName() + ".csv", "DEPARTURE_CITY, ARRIVAL_CITY, DATE, DAYS_UNTIL_FLIGHT, PRICE, AIRLINE, DURATION, DEPARTURE_TIME \n", 'w');
 
 });
 
